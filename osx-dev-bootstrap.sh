@@ -7,6 +7,9 @@ brew update
 # Install homebrew packages
 brew install postgres
 brew install node
+brew install carthage
+brew install xctool
+brew install swiftlint
 
 # Adds support for markdown preview in Finder's QuickLook
 brew cask install qlmarkdown
