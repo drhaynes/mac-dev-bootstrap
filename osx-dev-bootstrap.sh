@@ -110,6 +110,10 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 # Turn off the cursor shake magnification animation
 defaults write ~/Library/Preferences/.GlobalPreferences CGDisableCursorLocationMagnification -bool YES
 
+# Make the touchpad much more sensitive (useful for multi-monitor setups)
+# System enforced range is usually 0 to 3.0
+defaults write -g com.apple.trackpad.scaling -float 8.0
+
 
 killall Dock
 
