@@ -8,8 +8,8 @@ brew update
 brew install postgres
 brew install node
 brew install carthage
-brew install xctool
 brew install swiftlint
+brew install youtube-dl
 
 # Adds support for markdown preview in Finder's QuickLook
 brew cask install qlmarkdown
@@ -55,7 +55,8 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 9
 
 # Require password immediately after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
@@ -116,4 +117,7 @@ defaults write -g com.apple.trackpad.scaling -float 8.0
 
 
 killall Dock
+
+# Install Oh My Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
