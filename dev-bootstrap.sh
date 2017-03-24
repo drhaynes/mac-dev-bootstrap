@@ -115,9 +115,5 @@ defaults write ~/Library/Preferences/.GlobalPreferences CGDisableCursorLocationM
 # System enforced range is usually 0 to 3.0
 defaults write -g com.apple.trackpad.scaling -float 8.0
 
-
 killall Dock
-
-# Install Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 

@@ -1,14 +1,20 @@
-# osx-dev-bootstrap
+# Mac Dev Bootstrap
 
-Shell script for configuring a new Mac OS X account with defaults that are sensible for 
+Shell script for configuring a new Mac account with defaults that are sensible for 
 development work.
 
 ### Usage
 ```
 $ git clone git@github.com:drhaynes/osx-dev-bootstrap.git
-$ cd osx-dev-bootstrap
-$ chmod +x osx-dev-bootstrap.sh
-$ ./osx-dev-bootstrap.sh
+$ cd mac-dev-bootstrap
+$ chmod +x dev-bootstrap.sh
+$ ./dev-bootstrap.sh
+```
+### Optional
+
+To install some fairly opinionated things (zsh, shell aliases, vim config, etc.) also run:
+```
+$ chmod +x opinionated-bootstrap.sh
 ```
 
 ### Selected Highlights:
@@ -22,3 +28,4 @@ $ ./osx-dev-bootstrap.sh
 * ...and other useful items.
 
 For configuration details, see comments in the shell script itself.
+
