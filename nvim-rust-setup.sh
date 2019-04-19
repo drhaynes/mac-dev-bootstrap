@@ -16,30 +16,10 @@ rustup component add rls rust-analysis rust-src
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# Create nvim config to load plugins and setup rls
+# Copy our (very opinionated) nvim configuration into place
 mkdir -p ~/.config/nvim
-
-echo "
-\" vimplug loading
-call plug#begin('~/.local/share/nvim/site/plugged')
-
-\" RLS and async autocomplete plugins
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
-
-call plug#end()
-
-\" RLS setup, source: https://github.com/prabirshrestha/vim-lsp/wiki/Servers-Rust
-if executable('rls')
-    au User lsp_setup call lsp#register_server({
-        \ 'name': 'rls',
-        \ 'cmd': {server_info->['rustup', 'run', 'stable', 'rls']},
-        \ 'whitelist': ['rust'],
-        \ })
-endif
-" > ~/.config/nvim/init.vim
+cp init.vim ~/.config/nvim/
 
 # Reminder to run :PlugInstall in nvim, to complete installation
 echo "Run :PlugInstall when you launch nvim for the first time to complete plugin setup"
+
