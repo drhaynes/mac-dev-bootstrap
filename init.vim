@@ -110,6 +110,9 @@ let mapleader= ","
 set colorcolumn=81
 highlight ColorColumn ctermbg=8
 
+" Get rid of ~ characters at the end of buffers
+set fillchars=eob:\ 
+
 " Remap semicolon to colon, to save one keypress whenever : is required
 nnoremap ; :
 
