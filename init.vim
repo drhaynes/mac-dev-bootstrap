@@ -91,6 +91,7 @@ call matchadd('Trail', '\s\+$', 100)
 
 " Enable line numbering
 set number
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
 " Minimum number of lines to keep above and below the cursor
 set scrolloff=15
