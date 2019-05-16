@@ -14,6 +14,7 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'tpope/vim-fugitive'
+Plug 'elmcast/elm-vim'
 
 call plug#end()
 
@@ -35,6 +36,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_rust_checkers = ['cargo']
+let g:elm_syntastic_show_warnings = 1
 
 " Asyncomplete setup
 " Enable tab completion
@@ -82,7 +84,13 @@ set statusline+=\ Buf:%n                    " Buffer number
 
 " Indentation
 set tabstop=3
-set autoindent
+set shiftwidth=3
+set expandtab
+set ai
+set smartindent
+filetype on
+filetype plugin on
+filetype indent on
 
 " Show matching paren
 set showmatch
