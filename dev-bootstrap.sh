@@ -10,6 +10,7 @@ brew install node
 brew install carthage
 brew install swiftlint
 brew install youtube-dl
+brew install ffmpeg
 
 # Adds support for markdown preview in Finder's QuickLook
 brew cask install qlmarkdown
