@@ -2,26 +2,23 @@
 
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/drh/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 brew update
 
 # Install homebrew packages
-brew install postgres
-brew install node
 brew install carthage
 brew install swiftlint
-brew install youtube-dl
+brew install yt-dlp
 brew install ffmpeg
 brew install git-lfs
 brew install awscli
 brew install kubectl
-brew install minikube
 brew install go
 brew install helm
 brew install smlnj
 brew install emacs
-
-# Adds support for markdown preview in Finder's QuickLook
-brew cask install qlmarkdown
 
 # OS X Settings
 
