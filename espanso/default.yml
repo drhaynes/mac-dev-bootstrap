@@ -19,12 +19,14 @@ matches:
     replace: "Review and respond to "
   - trigger: ",pp"
     replace: "Plan new project: "
-  - trigger: ",sm"
-    replace: "Set meeting with
+  - trigger: ",am"
+    replace: "Arrange meeting with "
   - trigger: ",re"
     replace: "Respond to email re: "
   - trigger: ",co"
     replace: "Check out "
+  - trigger: ",wc"
+    replace: "Waiting for call from "
   - trigger: ",lc"
     replace: "(last check in: {{last_date}})"
     vars:
@@ -36,8 +38,18 @@ matches:
   # git-specific snippets
   - trigger: ",gp"
     replace: "git push origin HEAD"
-  - trigger: ",gf"
+  - trigger: ",gb"
     replace: "git checkout -b feature/"
+  - trigger: ",gc"
+    replace: "git commit -m \""
+  - trigger: ",ga"
+    replace: "git add "
+  - trigger: ",gl"
+    replace: "git log"
+  - trigger: ",gs"
+    replace: "git status"
+  - trigger: ",gd"
+    replace: "git diff"
 
   # Shell command example
   - trigger: ",shell"
