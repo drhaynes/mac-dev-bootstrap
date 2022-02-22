@@ -1,37 +1,30 @@
 # espanso configuration file
 
-# This is the default configuration file, change it as you like it
-# You can refer to the official documentation:
-# https://espanso.org/docs/
+# official documentation: https://espanso.org/docs
 
-# Matches are the substitution rules, when you type the "trigger" string
-# it gets replaced by the "replace" string.
+# Hide menu bar icon
+show_icon: false
+
 matches:
-  # Simple text replacement
+  # Planning & task management
   - trigger: ",fu"
     replace: "Follow up re: "
-
   - trigger: ",kr"
     replace: "Kind regards,"
-
   - trigger: ",mt"
     replace: "Many thanks,"
-
   - trigger: ",pe"
     replace: "Process email re: "
-
   - trigger: ",rr"
     replace: "Review and respond to "
-
   - trigger: ",pp"
-    replace: "Plan project - "
-
-  - trigger: ",gp"
-    replace: "git push origin HEAD"
-
-  - trigger: ",gf"
-    replace: "git checkout -b feature/"
-
+    replace: "Plan new project: "
+  - trigger: ",sm"
+    replace: "Set meeting with
+  - trigger: ",re"
+    replace: "Respond to email re: "
+  - trigger: ",co"
+    replace: "Check out "
   - trigger: ",lc"
     replace: "(last check in: {{last_date}})"
     vars:
@@ -39,18 +32,14 @@ matches:
         type: date
         params:
           format: "%d-%m-%Y"
-        
 
-  # Dates
-  - trigger: ",date"
-    replace: "{{mydate}}"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%m/%d/%Y"
+  # git-specific snippets
+  - trigger: ",gp"
+    replace: "git push origin HEAD"
+  - trigger: ",gf"
+    replace: "git checkout -b feature/"
 
-  # Shell commands
+  # Shell command example
   - trigger: ",shell"
     replace: "{{output}}"
     vars:
@@ -58,3 +47,4 @@ matches:
         type: shell
         params:
           cmd: "echo Hello from your shell"
+
