@@ -14,7 +14,6 @@ Session.vim
 # Icon must ends with two \r.
 Icon
 
-
 # Thumbnails
 ._*
 
@@ -178,4 +177,3 @@ tramp
 
 # IntelliJ
 *.iml
-

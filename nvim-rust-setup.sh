@@ -22,4 +22,4 @@ cp init.vim ~/.config/nvim/
 
 # Reminder to run :PlugInstall in nvim, to complete installation
 echo "Run :PlugInstall when you launch nvim for the first time to complete plugin setup"
-
+echo "Until this is done, nvim will show errors on launch"
