@@ -13,7 +13,7 @@ brew install --cask charles
 brew install --cask openscad
 brew install --cask paw
 brew install --cask vscodium
-brew install --cask dotnet
+brew install --cask dotnet-sdk
 brew install --cask racket
 brew install --cask sublime-text
 brew install --cask wwdc
