@@ -21,6 +21,8 @@ brew install --cask dotnet-sdk
 brew tap isen-ng/dotnet-sdk-versions
 # Install latest current .NET 6 SDK as well
 brew install --cask dotnet-sdk6-0-400
+# Also opt-out of MS telemetry
+echo "DOTNET_CLI_TELEMETRY_OPTOUT=1" >> ~/.zshrc
 
 brew install --cask racket
 brew install --cask sublime-text
