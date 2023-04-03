@@ -13,7 +13,15 @@ brew install --cask charles
 brew install --cask openscad
 brew install --cask paw
 brew install --cask vscodium
+
+# .NET SDK installation requires a bit of hoop jumping
+# Currently installs .NET 7 at time of writing
 brew install --cask dotnet-sdk
+# 3rd party repo for supporting multiple SDK installations
+brew tap isen-ng/dotnet-sdk-versions
+# Install latest current .NET 6 SDK as well
+brew install --cask dotnet-sdk6-0-400
+
 brew install --cask racket
 brew install --cask sublime-text
 brew install --cask wwdc
