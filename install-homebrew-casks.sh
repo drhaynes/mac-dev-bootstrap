@@ -12,6 +12,7 @@ brew install --cask pycharm
 brew install --cask charles
 brew install --cask openscad
 brew install --cask paw
+brew install --cask rider
 brew install --cask vscodium
 
 # .NET SDK installation requires a bit of hoop jumping
